@@ -10,7 +10,7 @@ title: Embedding SimWrapper
 <div style="height: 600px;width: 100%; border: 3px solid #44449988; border-radius: 8px">
 <iframe
     src="https://sfcta.github.io/simwrapper/files/viz-map-height.yaml?embed"
-    style="height: 100%;width: 100%; border-radius: 8px;z-index: -2"
+    style="height: 100%;width: 100%; border-radius: 8px"
     title="Iframe Example">
 </iframe>
 </div>
