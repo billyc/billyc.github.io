@@ -7,7 +7,7 @@ title: Embedding SimWrapper
 # Let's see if we can embed a SimWrapper map!
 
 
-<div style="height: 600px;width: 80%; border: 2px solid #44449988; border-radius: 5px">
+<div style="height: 600px;width: 100%; border: 3px solid #44449988; border-radius: 8px">
 <iframe
     src="https://sfcta.github.io/simwrapper/files/viz-map-height.yaml?embed"
     style="height: 100%;width: 100%;"
