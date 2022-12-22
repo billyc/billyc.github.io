@@ -15,7 +15,8 @@ Before coming to Berlin, I was **Director of Data** for the [Puget Sound Regiona
 
 I received my Masters in Civil Engineering from the [Northwestern University Transportation Center](https://www.transportation.northwestern.edu/) and my undergraduate BSCE from [Cornell University](https://www.cee.cornell.edu/cee).
 
-I am always looking for new interesting projects! Email me or find me on Twitter at @billyinberlin.
+I am always looking for new interesting projects! Email me or find me on Twitter at @billyinberlin
+or <a rel="me" href="https://urbanists.social/@billy">Mastodon @billy@urbanists.social</a>
 
 </div>
 
