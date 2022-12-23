@@ -57,15 +57,15 @@
   image: mystreet-grid.jpg
   description: 'Created an interactive map and project website for all projects and studies funded by SFCTA in San Francisco'
 
-- title: 'EN/DE/TR Keyboard'
-  url: https://billyc.github.io/en-de-tr-keyboard/
-  image: keyboard.png
-  description: 'Created a keyboard layout for typing English, German, and Turkish simultaneously. For Windows and Linux.'
+# - title: 'EN/DE/TR Keyboard'
+#   url: https://billyc.github.io/en-de-tr-keyboard/
+#   image: keyboard.png
+#   description: 'Created a keyboard layout for typing English, German, and Turkish simultaneously. For Windows and Linux.'
 
-- title: 'OMX'
+- title: 'OMX: Open Matrix Data Standard'
   url: https://github.com/osPlanning/omx
   image: omx.jpg
-  description: 'Co-led an ad-hoc committee which created an open, shareable standard for exchanging transportation data in matrix format. Wrote the Python reference implemenation.'
+  description: 'Co-led a technical committee which created an open, shareable standard for exchanging transportation data in matrix format. Wrote the Python reference implemenation.'
 # - title: Falcon
 #   url: https://github.com/uwdata/falcon
 #   code: https://github.com/uwdata/falcon
