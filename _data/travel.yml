@@ -1,3 +1,13 @@
+- title: TRB Annual Meeting
+  where: Washington DC
+  start: 2023-01-08
+  end: 2023-01-12
+
+- title: MATSim User Conference
+  where: Leuven, Belgium
+  start: 2022-05-28
+  end: 2022-05-28
+
 - title: IEEE VIS
   where: Online
   start: 2020-10-25
@@ -9,11 +19,11 @@
   end: 2018-10-26
 
 - title: TRB Annual Meeting
-  where: Washington
+  where: Washington DC
   start: 2020-01-07
   end: 2020-01-12
 
-- title: "hEART: European Assoc. for Research in Transportation"
+- title: 'hEART: European Assoc. for Research in Transportation'
   where: Prague
   start: 2019-09-21
   end: 2019-09-26
@@ -27,8 +37,3 @@
   where: Portland, OR
   start: 2019-06-02
   end: 2018-06-05
-
-- title: "hEART: European Assoc. for Research in Transportation"
-  where: Tel Aviv
-  start: 2017-09-05
-  end: 2017-09-08

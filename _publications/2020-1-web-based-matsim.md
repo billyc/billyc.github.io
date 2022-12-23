@@ -3,7 +3,7 @@ layout: publication
 authors:
   - Billy Charlton
   - Janek Laudan
-title: "A Web-Based Data Visualization Platform for MATSim "
+title: 'A Web-Based Data Visualization Platform for MATSim '
 type:
   - Journal
 pdf: https://svn.vsp.tu-berlin.de/repos/public-svn/publications/vspwp/2020/20-08/CharltonLaudan2020WebBasedVisualization-accepted.pdf
@@ -15,7 +15,7 @@ tags:
   - Data Visualization
 tweet:
 venue_tags: Transportation Research Record
-venue: "Transportation Research Record 2674.10"
+venue: 'Transportation Research Record 2674.10'
 year: 2020
 highlight: 1
 ---

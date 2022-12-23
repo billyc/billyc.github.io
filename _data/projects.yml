@@ -1,10 +1,10 @@
-- title: aftersim
-  url: https://aftersim.github.io
-  code: https://github.com/aftersim/aftersim.github.io
-  paper: https://svn.vsp.tu-berlin.de/repos/public-svn/publications/vspwp/2020/20-08/CharltonLaudan2020WebBasedVisualization-accepted.pdf
-  image: aftersim.png
-  description: "I built the _aftersim_ web-based data visualization platform for examining outputs from MATSim and other large transport simulations."
-  highlight: 2
+- title: SimWrapper
+  demo: https://vsp.berlin/simwrapper
+  code: https://github.com/simwrapper/simwrapper
+  paper: https://svn.vsp.tu-berlin.de/repos/public-svn/publications/vspwp/2022/22-21/CharltonSana2022SimWrapper.pdf
+  image: simwrapper.jpg
+  description: 'SimWrapper is the culmination of my Ph.D. thesis research: an open data visualization platform for examining outputs from MATSim and ActivitySim transport simulations.'
+  highlight: 1
 
 - title: COVID-Sim
   url: https://covid-sim.info
@@ -12,30 +12,36 @@
   demo: https://covid-sim.info/v3?day=17
   paper: https://www.medrxiv.org/content/10.1101/2020.07.22.20160093v2.full.pdf
   image: covid-sim.png
-  description: "Interactive visualizations of virus spreading through Berlin, plus dashboards for comparing results of hundreds of EpiSim simulations."
-  highlight: 1
+  description: 'Interactive visualizations of virus spreading through Berlin, plus dashboards for comparing results of hundreds of EpiSim simulations.'
+  highlight: 2
 
 - title: Zephyr
   url: https://zephyrtransport.org
   code: https://github.com/ZephyrTransport
   image: zephyr.png
-  description: "Founding board member of Zephyr Transport Foundation, which supports improvements in travel forecasting software"
+  description: 'Founding board member of Zephyr Transport Foundation, which supports improvements in travel forecasting software'
 
-- title: "AVÖV"
+- title: 'AVÖV'
   url: https://avoev-vsp.github.io
   code: https://github.com/avoev-vsp/avoev.github.io
   demo: https://avoev-vsp.github.io/v/vehicle-animation/vulkaneifel/output-Vu-DRT-2/viz-vehicles.yml
   image: avoev.png
-  description: "AVÖV (Demand Responsive Transit in German) - built website and data visualizations for exploring potential to serve rural transit trips with shared autonomous taxis (site in German)"
+  description: 'AVÖV (Demand Responsive Transit in German) - built website and data visualizations for exploring potential to serve rural transit trips with shared autonomous taxis (site in German)'
   highlight: 5
 
-- title: "TNCs Today in SF"
+- title: 'TNCs Today in SF'
   url: https://www.sfcta.org/projects/tncs-today
   code: https://github.com/sfcta/tncstoday
   demo: https://tncstoday.sfcta.org
   image: tncs-thumbnail.jpg
-  description: "Visualization of Uber and Lyft pickups/dropoffs in San Francisco, part of a larger effort to understand the impacts of shared mobility on SF Streets."
+  description: 'Visualization of Uber and Lyft pickups/dropoffs in San Francisco, part of a larger effort to understand the impacts of shared mobility on SF Streets.'
   highlight: 4
+
+- title: MATSim-R support library
+  url: https://vsp.berlin/matsim-r/
+  code: https://github.com/matsim-vsp/matsim-r
+  image: matsim-r.jpg
+  description: 'The MATSim-R support library, for producing automated graphs and dashboards from MATSim simulation outputs.'
 
 - title: SNF Swiss Traffic Model
   url: https://vsp-snf.surge.sh/
@@ -43,23 +49,23 @@
   code: https://gitlab.tubit.tu-berlin.de/vsp/snf-big-data
   paper: https://svn.vsp.tu-berlin.de/repos/public-svn/publications/vspwp/2020/20-11/ZiemkeEtAl2020ActitoppMatsim.pdf
   image: snf-swiss-simulation.jpg
-  description: "A demonstration of building a very large traffic simulation model based on mobile phone records and census data."
+  description: 'A demonstration of building a very large traffic simulation model based on mobile phone records and census data.'
 
-- title: "MyStreet SF"
+- title: 'MyStreet SF'
   url: https://mystreetsf.sfcta.org/#filter=7&zoom=13.25&center=37.765,-122.438
   code: https://github.com/sfcta/MyStreetSF-2.0
   image: mystreet-grid.jpg
-  description: "Created an interactive map and project website for all projects and studies funded by SFCTA in San Francisco"
+  description: 'Created an interactive map and project website for all projects and studies funded by SFCTA in San Francisco'
 
-- title: "EN/DE/TR Keyboard"
+- title: 'EN/DE/TR Keyboard'
   url: https://billyc.github.io/en-de-tr-keyboard/
   image: keyboard.png
-  description: "Created a keyboard layout for typing English, German, and Turkish simultaneously. For Windows and Linux."
+  description: 'Created a keyboard layout for typing English, German, and Turkish simultaneously. For Windows and Linux.'
 
-- title: "OMX"
+- title: 'OMX'
   url: https://github.com/osPlanning/omx
   image: omx.jpg
-  description: "Co-led an ad-hoc committee which created an open, shareable standard for exchanging transportation data in matrix format. Wrote the Python reference implemenation."
+  description: 'Co-led an ad-hoc committee which created an open, shareable standard for exchanging transportation data in matrix format. Wrote the Python reference implemenation.'
 # - title: Falcon
 #   url: https://github.com/uwdata/falcon
 #   code: https://github.com/uwdata/falcon

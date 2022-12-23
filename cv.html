@@ -101,7 +101,8 @@ To support informed decisionmaking and advance the art of data visualization in 
 
 {% assign sorted_pubs = site.publications | reverse %}
 
-{% assign types = "Conference|Journal|Book Chapter|Demo|Workshop|Thesis" | split: "|" %}
+<!-- {% assign types = "Conference|Journal|Book Chapter|Demo|Workshop|Thesis" | split: "|" %} -->
+{% assign types = "Conference|Journal|Book Chapter" | split: "|" %}
 {% for type in types %}
   {% assign counter = 1 %}
   {% for pub in sorted_pubs %}
@@ -166,7 +167,7 @@ To support informed decisionmaking and advance the art of data visualization in 
 {% endfor %}
 
 
-<h2>Talks  <a href="{{ '/talks/' | absolute_url }}">[Interactive Version]</a></h2>
+<!-- <h2>Talks  <a href="{{ '/talks/' | absolute_url }}">[Interactive Version]</a></h2>
 
 {% assign talktitles = site.data.talks | group_by:"title" %}
 {% for title in talktitles %}
@@ -181,7 +182,7 @@ To support informed decisionmaking and advance the art of data visualization in 
     </div>
   {% endfor %}
 </article>
-{% endfor %}
+{% endfor %} -->
 
 
 <h2>Teaching Experience</h2>
