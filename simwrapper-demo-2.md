@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /simwrapper-demo/
+permalink: /simwrapper-demo-2/
 title: Embedding SimWrapper
 ---
 
