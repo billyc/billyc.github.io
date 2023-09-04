@@ -1,14 +1,24 @@
 - university: Northwestern University
   years: 1996
-  degree: M.S. in Civil Engineering
-  location: Evanston, IL
+  degree: Master of Science in Civil Engineering
+  location: Evanston, Illinois
   description:
     - Advised by **Joseph Schofer** and **Frank Koppelman**.
     - 'Thesis: "Familiar Driver Response to In-Vehicle Route Guidance Systems"'
+    - 'Degree awarded December 1996. Duration, August 1995 - December 1996.'
+
 - university: Cornell University
   years: 1991
-  degree: B.S. in Civil Engineering
-  location: Ithaca, NY
+  degree: Bachelor of Science in Civil Engineering
+  location: Ithaca, New York
   description:
     - Transportation engineering focus
     - Received the 1991 Crandall Award for Writing in Engineering
+    - 'Degree awarded May 1991. Duration, August 1987 - May 1991.'
+
+- university: Springbrook High School
+  years: 1987
+  degree: High School Diploma
+  location: Silver Spring, Maryland
+  description:
+    - 'Diploma awarded June 1987. Duration, September 1983 - June 1987.'
