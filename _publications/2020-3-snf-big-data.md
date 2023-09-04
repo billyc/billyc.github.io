@@ -3,9 +3,9 @@ layout: publication
 authors:
   - Dominik Ziemke
   - Billy Charlton
-  - Sebastial Hörl
+  - Sebastian Hörl
   - Kai Nagel
-title: "An efficient approach to create agent-based transport simulation scenarios based on ubiquitous Big Data and a new, aspatial activity-scheduling model"
+title: 'An efficient approach to create agent-based transport simulation scenarios based on ubiquitous Big Data and a new, aspatial activity-scheduling model'
 type:
   - Conference
 doi: https://doi.org/10.1016/j.trpro.2021.01.073

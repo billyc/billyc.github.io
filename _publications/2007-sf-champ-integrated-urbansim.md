@@ -1,21 +1,18 @@
 ---
 layout: publication
 authors:
-  - Joe Castiglione
-  - Rachel Hiatt
-  - Tilly Chang
+  - Paul Waddell
+  - Liming Wang
   - Billy Charlton
-title: "Application of travel demand microsimulation model for equity analysis"
+title: 'Integration of a parcel-level land use model and an activity-based travel model'
 type:
-  - Journal
-doi: https://doi.org/10.1177/0361198106197700105
-short_doi: 10.1177/0361198106197700105
-#link: https://www.sfcta.org/tools-data/tools/cycletracks
+  - Conference
+link: https://trid.trb.org/view/885685
 tags:
-  - Equity
   - Travel Modeling
+  - Urbansim
 tweet:
-venue_tags: Transportation Research Record
-venue: "Transportation Research Record 1977(1)"
-year: 2006
+venue_tags: WCTR
+venue: '11th World Conference on Transport Research'
+year: 2007
 ---
