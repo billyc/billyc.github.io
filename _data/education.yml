@@ -1,9 +1,18 @@
+- university: Technische Universität Berlin
+  years: 2023 (expected)
+  degree: Doctor of Engineering (Dr. Ingr.)
+  location: Berlin, Germany
+  description:
+    - Advised by Professor Kai Nagel
+    - 'Dissertation: "Web-Based Data Visualization in Support of Agent-Based Microsimulation Models"'
+    - 'Degree expected in October 2023. Duration, August 2017 - October 2023.'
+
 - university: Northwestern University
   years: 1996
   degree: Master of Science in Civil Engineering
   location: Evanston, Illinois
   description:
-    - Advised by **Joseph Schofer** and **Frank Koppelman**.
+    - Advised by Joseph Schofer and Frank Koppelman.
     - 'Thesis: "Familiar Driver Response to In-Vehicle Route Guidance Systems"'
     - 'Degree awarded December 1996. Duration, August 1995 - December 1996.'
 
