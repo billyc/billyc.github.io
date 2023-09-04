@@ -14,7 +14,7 @@
   description:
     - Advised by Joseph Schofer and Frank Koppelman.
     - 'Thesis: "Familiar Driver Response to In-Vehicle Route Guidance Systems"'
-    - 'Degree awarded December 1996. Duration, August 1995 - December 1996.'
+    # - 'Degree awarded December 1996. Duration, August 1995 - December 1996.'
 
 - university: Cornell University
   years: 1991
@@ -22,12 +22,12 @@
   location: Ithaca, New York
   description:
     - Transportation engineering focus
-    - Received the 1991 Crandall Award for Writing in Engineering
-    - 'Degree awarded May 1991. Duration, August 1987 - May 1991.'
-
-- university: Springbrook High School
-  years: 1987
-  degree: High School Diploma
-  location: Silver Spring, Maryland
-  description:
-    - 'Diploma awarded June 1987. Duration, September 1983 - June 1987.'
+    - Received the Crandall Award for Writing in Engineering
+    # - 'Degree awarded May 1991. Duration, August 1987 - May 1991.'
+#
+# - university: Springbrook High School
+#   years: 1987
+#   degree: High School Diploma
+#   location: Silver Spring, Maryland
+#   description:
+#     - 'Diploma awarded June 1987. Duration, September 1983 - June 1987.'
