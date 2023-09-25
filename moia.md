@@ -6,7 +6,7 @@ title: Holzkirchen DRT Analysis
 
 # Holzkirchen DRT Analysis
 
-<div style="background-color: #ff8; font size: 2.0rem; padding 1rem; border: 1px solid #33333360;">
+<div style="background-color: #ff8; font size: 2.0rem; padding: 1rem; border: 1px solid #33333360;">
 Pooling Rate: <b>0.7044</b>
 </div>
 
@@ -26,7 +26,7 @@ As the events are streamed, these dictionaries are populated as needed. Pickup e
 
 At the end of the simulation, the code prints out some sanity checks; for example, the list of DRT requests in each vehicle should be zero.
 
-Finally, the pooling ratio is calculated. My code results in 460 pooled trips out of 653 total trips, for a pooling rate of 0.70444.
+Finally, the pooling ratio is calculated. My code results in 460 pooled trips out of 653 total trips, for a pooling rate of 0.70444. This does **not** take into account the zero-passenger "deadhead" trips where the driver is simply moving the car to pick up a passenger.
 
 The KPIs are printed to the screen and are also output to `KPIs.csv` in case these values are expected to be piped into a
 larger data analysis framework.
@@ -69,7 +69,7 @@ I did not have time to add calculations for these other measures.
 
 A live animation of the DRT service is below. This uses [SimWrapper](https://simwrapper.github.io), the open-source final product of my Ph.D. research.
 
-In addition to making a visually compelling visualization of the simulation results, I use this for debugging. The color of the vehicles and routes represents the number of passengers in each vehicle: gray is driver-only, yellow is one passenger, and so on. When I saw the 0.7 pooling ratio, I thought inspecting the simulation visually would make it obvious that the calculated pooling rate was too high. But one can clearly see in the animation that many, many trips are pooled, up to five passengers at a time in some cases!
+In addition to making a visually compelling visualization of the simulation results, I use this for debugging. The color of the vehicles and routes represents the number of passengers in each vehicle: gray is driver-only, green is one passenger, yellow is two, and so on. When I saw the 0.7 pooling ratio, I thought inspecting the simulation visually would make it obvious that the calculated pooling rate was too high. But one can clearly see in the animation that many, many trips are pooled, up to five passengers at a time in some cases!
 
 For this animation, I used a Python script (which I wrote) from SimWrapper that postprocesses DRT event files and produces a JSON-formatted text file with the needed data for the vehicle paths, drt requests, and vehicle occupancy. I have included that script in the files I've created here, although please note I did not write it explicitly for this challenge.
 
