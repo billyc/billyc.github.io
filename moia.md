@@ -67,7 +67,7 @@ I did not have time to add calculations for these other measures.
 
 ## DRT Animation
 
-A live animation of the DRT service is below. This uses [SimWrapper](https://simwrapper.github.io), the final product of my Ph.D. research.
+A live animation of the DRT service is below. This uses [SimWrapper](https://simwrapper.github.io), the open-source final product of my Ph.D. research.
 
 In addition to making a visually compelling visualization of the simulation results, I use this for debugging. The color of the vehicles and routes represents the number of passengers in each vehicle: gray is driver-only, yellow is one passenger, and so on. When I saw the 0.7 pooling ratio, I thought inspecting the simulation visually would make it obvious that the calculated pooling rate was too high. But one can clearly see in the animation that many, many trips are pooled, up to five passengers at a time in some cases!
 
