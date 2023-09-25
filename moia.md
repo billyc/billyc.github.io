@@ -76,6 +76,8 @@ A live animation of the DRT service is below. This uses [SimWrapper](https://sim
 
 In addition to making a visually compelling visualization of the simulation results, I use this for debugging. The color of the vehicles and routes represents the number of passengers in each vehicle: gray is driver-only, yellow is one passenger, and so on. When I saw the 0.7 pooling ratio, I thought inspecting the simulation visually would make it obvious that the calculated pooling rate was too high. But it is easily seen in the animation that many, many trips are pooled, up to five passengers at a time in some cases!
 
+For this animation, I used a Python script (which I wrote) from SimWrapper that postprocesses DRT event files and produces a JSON-formatted text file with the needed data for the vehicle paths, drt requests, and vehicle occupancy. I have included that script in the files I've created here, although please note I did not write it explicitly for this challenge.
+
 <div style="height: 640px;width: 100%; border: none; border-radius: 8px">
 <iframe
     src="https://simwrapper.github.io/staging/public/de/viz-examples/holzkirchen/viz-vehicles-moia.yaml"
