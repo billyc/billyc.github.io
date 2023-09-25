@@ -59,7 +59,7 @@ I can imagine several other measures:
 Since I only spent about an hour to get the pooling rate, I decided to add calculations for the utilization rate into
 the analysis script. You can view the Git history if you just want to see the code for the pooling rate without the added analysis for utilization. Your average utilization rate across the whole simulation is **0.0648**.
 
-**Circuitousness:** How far out of a passenger's way are they taken when they pool with other passengers? I believe the `unsharedRideTime` attribute on the DRT request is the shortest-path, and from the event stream the actual time for the passenger can easily be calculated. Less circuitous routes are beneficial to passengers and would make a better service. A similar Python post-processing analysis could then create some statistics on this.
+**Circuitousness:** How far out of a passenger's way are they taken when they pool with other passengers? I believe the `unsharedRideTime` attribute on the DRT request is the shortest-path, and from the event stream the actual time for the passenger can easily be calculated. Less circuitous routes are beneficial to passengers and would make a better service. A similar Python post-processing analysis could then create some statistics on this topic.
 
 **Driver deadheading:** Deadheading, the moving of vehicles without any passengers, could also be calculated easily from the events file. A KPI with the total amount of kilometers traveled with zero passengers would be interesting, and efforts to minimize that KPI would make the service more efficient.
 
@@ -69,7 +69,7 @@ I did not have time to add calculations for these other measures.
 
 A live animation of the DRT service is below. This uses [SimWrapper](https://simwrapper.github.io), the final product of my Ph.D. research.
 
-In addition to making a visually compelling visualization of the simulation results, I use this for debugging. The color of the vehicles and routes represents the number of passengers in each vehicle: gray is driver-only, yellow is one passenger, and so on. When I saw the 0.7 pooling ratio, I thought inspecting the simulation visually would make it obvious that the calculated pooling rate was too high. But it is easily seen in the animation that many, many trips are pooled, up to five passengers at a time in some cases!
+In addition to making a visually compelling visualization of the simulation results, I use this for debugging. The color of the vehicles and routes represents the number of passengers in each vehicle: gray is driver-only, yellow is one passenger, and so on. When I saw the 0.7 pooling ratio, I thought inspecting the simulation visually would make it obvious that the calculated pooling rate was too high. But one can clearly see in the animation that many, many trips are pooled, up to five passengers at a time in some cases!
 
 For this animation, I used a Python script (which I wrote) from SimWrapper that postprocesses DRT event files and produces a JSON-formatted text file with the needed data for the vehicle paths, drt requests, and vehicle occupancy. I have included that script in the files I've created here, although please note I did not write it explicitly for this challenge.
 
@@ -80,7 +80,10 @@ For this animation, I used a Python script (which I wrote) from SimWrapper that 
     title="Holzkirchen">
 </iframe>
 </div>
-<p><i>Figure 1. Holzkirchen DRT Animation</i></p>
+<p><i>Figure 1. Holzkirchen DRT Animation.</i></p>
+
+This is interactive: try sliding the timer to midday when there is more DRT action, enable the DRT requests to see "arcs" connecting origins and destinations, and right-click-and-drag the map to change the 3D view.
+
 
 ## Time spent
 
@@ -96,9 +99,9 @@ These additional tasks were performed after I produces the pooling rate above.
 - 0:15 Write utilization rate code
 - 0:15 Post-process event file for input to DRT animation
 - 0:15 Copy animation files to server & viz setup
-- 0:30 Documentation / webpage write-up
+- 0:45 Documentation / webpage write-up
 
-**TOTAL TIME: 3.0 hours**
+**TOTAL TIME: 3.25 hours**
 
 ## Thank you
 
@@ -107,4 +110,4 @@ omissions in the analysis, I look forward to discussing them with you.
 
 All my best
 
-- Billy
+..Billy
