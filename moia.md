@@ -6,7 +6,7 @@ title: Holzkirchen DRT Analysis
 
 # Holzkirchen DRT Analysis
 
-<div style="background-color: yellow; font size: 2.0rem">
+<div style="background-color: #ff8; font size: 2.0rem; padding 1rem; border: 1px solid #33333360;">
 Pooling Rate: <b>0.7044</b>
 </div>
 
@@ -89,12 +89,15 @@ For this animation, I used a Python script (which I wrote) from SimWrapper that 
 
 ## Time spent
 
-Since you are evaluating my work I also thought it would be helpful to help you know
+Since you are evaluating my work, I also thought it would be helpful to help you know
 how long this took.
 
 - 0:30 Plan initial approach (pen/paper)
 - 0:45 Writing Python script to get initial pooling rate
 - 0:30 Debugging and tracing to see if 0.70 rate was actually correct
+
+These additional tasks were performed after I produces the pooling rate above.
+
 - 0:15 Write utilization rate code
 - 0:15 Post-process event file for input to DRT animation
 - 0:15 Copy animation files to server & viz setup
