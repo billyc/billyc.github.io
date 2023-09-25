@@ -6,7 +6,7 @@ title: Holzkirchen DRT Analysis
 
 # Holzkirchen DRT Analysis
 
-<div style="background-color: yellow">
+<div style="background-color: yellow; font size: 2.0rem">
 Pooling Rate: <b>0.7044</b>
 </div>
 
