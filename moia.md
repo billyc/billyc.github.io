@@ -28,10 +28,7 @@ At the end of the simulation, the code prints out some sanity checks; for exampl
 
 Finally, the pooling ratio is calculated. My code results in 460 pooled trips out of 653 total trips, for a pooling rate of 0.70444. This does **not** take into account the zero-passenger "deadhead" trips where the driver is simply moving the car to pick up a passenger.
 
-The KPIs are printed to the screen and are also output to `KPIs.csv` in case these values are expected to be piped into a
-larger data analysis framework.
-
-The code is also commented to help you follow the logic.
+The KPIs are printed to the screen and are also output to `KPIs.csv` in case these values are expected to be piped into a larger data analysis framework.
 
 **KPIs.csv:**
 
@@ -41,6 +38,10 @@ Pooled trips,460
 Total trips,653
 Pooling rate,0.7044410413476263
 ```
+
+If this were part of a larger analysis pipeline, I would take the time to write some logic tests and create a small test XML file with which to verify the code works as intended. This is a very simple task, so given the time constraints I did not want to construct a fake XML event file for testing when I could use that time to show some of my other skills instead.
+
+Python has a built in unittest module which is barebones but sufficient; perhaps MOIA has their own testing framework already in use, and I would be very comfortable writing test-driven-development code if that is how you operate.
 
 ## Discussion
 
@@ -80,7 +81,7 @@ For this animation, I used a Python script (which I wrote) from SimWrapper that 
     title="Holzkirchen">
 </iframe>
 </div>
-<p><i>Figure 1. Holzkirchen DRT Animation.</i></p>
+<p><b><i>Figure 1. Holzkirchen DRT Animation.</i></b></p>
 
 This is interactive: try sliding the timer to midday when there is more DRT action, enable the DRT requests to see "arcs" connecting origins and destinations, increase the speed or run the simulation backwards, and right-click-and-drag the map to change the 3D view.
 
@@ -102,6 +103,10 @@ These additional tasks were performed after I produces the pooling rate above.
 - 0:45 Documentation / webpage write-up
 
 **TOTAL TIME: 3.25 hours**
+
+Note, this is a very short script so I did not spend time diving things into methods
+and writing unit tests. I thought the time would be better spent adding additional
+analyses, as I have done.
 
 ## Thank you
 
