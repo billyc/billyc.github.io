@@ -99,7 +99,7 @@ These additional tasks were performed after I produced the pooling rate above.
 
 **TOTAL TIME: 3.25 hours**
 
-Note, this is a very short script so I did not spend time diving things into methods
+Note, this is a very short script so I did not spend time dividing the code into small methods
 and writing unit tests. I thought the time would be better spent adding additional
 analyses, as I have done.
 
