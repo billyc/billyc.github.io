@@ -14,13 +14,13 @@ Pooling Rate: <b>0.7044</b>
 
 I have analyzed DRT event files at VSP before using Python, so for expediency I chose to use Python for this analysis. MATSim event files can be analyzed in Java using the MATSim frameworks, but for data science tasks I usually prefer R or Python anyway. So let's go!
 
-First, with pen and paper I considered what was needed to get from a raw events file to the desired pooling rate, and after some thinking I arrived at an approach which only required the `passenger picked up` and `passenger dropped off` events, since those two events have attributes for vehicle ID and request ID on them.
+First, with pen and paper I considered what was needed to get from a raw events file to the desired pooling rate, and after reviewing the attributes of the various event types, I arrived at an approach which only required the `passenger picked up` and `passenger dropped off` events, since those two events have attributes for vehicle ID and request ID on them.
 
 I leveraged the Python [matsim-tools](https://pypi.org/project/matsim-tools/) library, which I wrote :-) and which handles parsing XML and streaming events as a loop nicely.
 
 The algorithm is fairly straightforward: keep two Python dictionaries in memory to track the progress of the simulation. One is keyed on vehicle ID, and includes the set of DRT requests currently being served by that vehicle. The second is keyed on the request ID, and is a simple boolean true/false marking whether that trip has shared a vehicle with passengers from another request.
 
-As the events are streamed, these dictionaries are populated as needed. Pickup events trigger a check to see if the vehicle already has passengers; if so then those requests are all marked as pooled trips. Dropoff events trigger the housekeeping which removes requests from the tagged vehicle and increment the global counters for total trips.
+As the events are streamed, these dictionaries are populated as needed. Pickup events trigger a check to see if the vehicle is currently serving other passengers; if so then those requests are all marked as pooled trips. Dropoff events trigger the housekeeping which removes requests from the tagged vehicle and increments the global counters for total trips.
 
 At the end of the simulation, the code prints out some sanity checks; for example, the list of DRT requests in each vehicle should be zero.
 
@@ -43,20 +43,17 @@ Python has a built in unittest module which is barebones but sufficient; perhaps
 
 ## Discussion
 
-Based on previous experience with DRT simulations, I initially thought that a pooling rate of 0.7044 was _far too high_ especially for such a small city. So, I spent quite a bit of extra time adding logging/trace statements to my code. Alas,
-I cannot find any mistakes in the logic, so as far as I can tell, this rate is correct. Congratulations on having such a high pooling rate!
+Based on previous experience with DRT simulations, I initially thought that a pooling rate of 0.7044 was _far too high_ especially for such a small city. So, I spent quite a bit of extra time adding logging/trace statements to my code. Alas, I cannot find any mistakes in the logic, so as far as I can tell, this rate is correct. Congratulations on having such a high pooling rate!
 
 ## Other measures
 
-The efficiency of a pooling service can be measured in many ways, and the pooling rate is probably just the beginning
-of what you might want to look at.
+The efficiency of a pooling service can be measured in many ways, and the pooling rate is probably just the beginning of what you might want to look at.
 
 I can imagine several other measures:
 
 **Vehicle utilization:** what percentage of time in the simulation does each vehicle have at least one passenger inside? This could be calculated as a percentage of the total simulation time, or of a 24-hour window as your simulation is 30 hours.
 
-Since I only spent about an hour to get the pooling rate, I decided to add calculations for the utilization rate into
-the analysis script. You can view the Git history if you just want to see the code for the pooling rate without the added analysis for utilization. Your average utilization rate across the whole simulation is **0.0648**.
+Since I only spent about an hour to get the pooling rate, I decided to add calculations for the utilization rate into the analysis script. You can view the Git history if you just want to see the code for the pooling rate without the added analysis for utilization. Your average utilization rate across the whole simulation is **0.0648**.
 
 **Circuitousness:** How far out of a passenger's way are they taken when they pool with other passengers? I believe the `unsharedRideTime` attribute on the DRT request is the shortest-path, and from the event stream the actual time for the passenger can easily be calculated. Less circuitous routes are beneficial to passengers and would make a better service. A similar Python post-processing analysis could then create some statistics on this topic.
 
