@@ -36,6 +36,8 @@ Finally, the pooling ratio is calculated. My code results in 460 pooled trips ou
 The KPIs are printed to the screen and are also output to `KPIs.csv` in case these values are expected to be piped into a
 larger data analysis framework.
 
+The code is also commented to help you follow the logic.
+
 **KPIs.csv:**
 
 ```
