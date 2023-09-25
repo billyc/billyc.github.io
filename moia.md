@@ -82,7 +82,7 @@ For this animation, I used a Python script (which I wrote) from SimWrapper that 
 </div>
 <p><i>Figure 1. Holzkirchen DRT Animation.</i></p>
 
-This is interactive: try sliding the timer to midday when there is more DRT action, enable the DRT requests to see "arcs" connecting origins and destinations, and right-click-and-drag the map to change the 3D view.
+This is interactive: try sliding the timer to midday when there is more DRT action, enable the DRT requests to see "arcs" connecting origins and destinations, increase the speed or run the simulation backwards, and right-click-and-drag the map to change the 3D view.
 
 
 ## Time spent
