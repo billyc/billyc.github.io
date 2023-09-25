@@ -76,7 +76,7 @@ For this animation, I used a Python script (which I wrote) from SimWrapper that 
 
 <div style="height: 640px;width: 100%; border: none; border-radius: 8px">
 <iframe
-    src="https://simwrapper.github.io/staging/public/de/viz-examples/holzkirchen/viz-vehicles-moia.yaml"
+    src="https://simwrapper.github.io/staging/public/de/viz-examples/holzkirchen/viz-vehicles-moia.yaml?embed"
     style="height: 100%;width: 100%; border-radius: 8px"
     title="Holzkirchen">
 </iframe>
@@ -95,7 +95,7 @@ how long this took.
 - 0:45 Writing Python script to get initial pooling rate
 - 0:30 Debugging and tracing to see if 0.70 rate was actually correct
 
-These additional tasks were performed after I produces the pooling rate above.
+These additional tasks were performed after I produced the pooling rate above.
 
 - 0:15 Write utilization rate code
 - 0:15 Post-process event file for input to DRT animation
