@@ -12,13 +12,11 @@ Pooling Rate: <b>0.7044</b>
 
 ## Approach
 
-I have analyzed DRT event files at VSP before using Python, so I had familiarity with the process
-in that language. So for this task it was much faster for me to choose Python instead of writing
-MATSim Java code for the post-processing.
+I have analyzed DRT event files at VSP before using Python, so for expediency I chose to use Python for this analysis. MATSim event files can be analyzed in Java using the MATSim frameworks, but for data science tasks I usually prefer R or Python anyway. So let's go!
 
-With pen and paper I considered what was needed to get from a raw events file to the desired pooling rate, and after a few moments I arrived at an approach which only required the `passenger picked up` and `passenger dropped off` events, since those two events have attributes for vehicle ID and request ID on them.
+First, with pen and paper I considered what was needed to get from a raw events file to the desired pooling rate, and after some thinking I arrived at an approach which only required the `passenger picked up` and `passenger dropped off` events, since those two events have attributes for vehicle ID and request ID on them.
 
-I leveraged the Python [matsim-tools](https://pypi.org/project/matsim-tools/) library, which I wrote :-) and which handles parsing XML and streaming the events as a loop nicely.
+I leveraged the Python [matsim-tools](https://pypi.org/project/matsim-tools/) library, which I wrote :-) and which handles parsing XML and streaming events as a loop nicely.
 
 The algorithm is fairly straightforward: keep two Python dictionaries in memory to track the progress of the simulation. One is keyed on vehicle ID, and includes the set of DRT requests currently being served by that vehicle. The second is keyed on the request ID, and is a simple boolean true/false marking whether that trip has shared a vehicle with passengers from another request.
 
