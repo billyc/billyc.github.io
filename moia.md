@@ -37,7 +37,7 @@ Total trips,653
 Pooling rate,0.7044410413476263
 ```
 
-If this were part of a larger analysis pipeline, I would take the time to write some unit tests and specifically I would create a small test XML file with which to verify the code works as intended. Given the time constraints and my familiarity with Python scripting for DRT analysis, I did not want to construct a fake XML event file for testing when I could use that time to show some of my other skills instead.
+If this were part of a larger analysis pipeline, I would take the time to write some unit tests and specifically I would create a small test XML file with which to verify that the code works as intended. Given the time constraints and my familiarity with Python scripting for DRT analysis, I did not want to construct a fake XML event file for testing when I could use that time to show some of my other skills instead.
 
 Python has a built in unittest module which is barebones but sufficient; perhaps MOIA has their own testing framework already in use, and I would be very comfortable writing test-driven-development code if that is how you operate.
 
