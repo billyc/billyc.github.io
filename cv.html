@@ -50,20 +50,20 @@ developing platforms and technologies that let people see and communicate what t
 <article>
   <div class="date-container">
     <span class="date">{{ pos.years | replace: "-", "–" }}</span>
-    <strong class="fill">{{ pos.title }}{% if pos.company %} at {{pos.company}}{% endif %}</strong>
+    <b class="fill">{{ pos.title }}{% if pos.company %}, {{pos.company}}{% endif %}</b>
     <span class="right">{{ pos.location }}</span>
   </div>
-  <!-- <p>
+  <p>
     {% if pos.mentors %}
-      Mentor{% if pos.mentors.size > 1 %}s{% endif %}: {% for mentor in pos.mentors %}
+      Doctoral adviser{% if pos.mentors.size > 1 %}s{% endif %}: {% for mentor in pos.mentors %}
         {% include person person=mentor %}{% unless forloop.last %}, {% endunless %}
       {% endfor %}<br/>
     {% endif %}
     {{ pos.description | markdownify | remove: '<p>' | remove: '</p>' }}
-    {% if pos.skills %}
+    <!-- {% if pos.skills %}
     <small class="muted">[{% for skill in pos.skills %}{{ skill }}{% unless forloop.last %}, {% endunless %}{% endfor %}]</small>
-    {% endif %}
-  </p> -->
+    {% endif %} -->
+  </p>
 </article>
 {% endfor %}
 

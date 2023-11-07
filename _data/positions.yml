@@ -29,7 +29,7 @@
   years: 2011-present
   company: Because LLC
   location: San Francisco, Seattle
-  description: Private boutique consulting for private firms and government agencies needing expertise in web-based data visualization, travel demand modeling, and software development. Clients include Sidewalk Labs, San Francisco County Transportation Authority, NACTO, WSP Inc., others.
+  description: Consulting for private firms and government agencies needing expertise in web-based data visualization, travel demand modeling, and software development. Clients include Sidewalk Labs, San Francisco County Transportation Authority, NACTO, WSP Inc., others.
   project: TNCs Today, MyStreetSF
   skills:
     - Web-based data visualization
@@ -39,7 +39,7 @@
   years: 2007-2011
   company: San Francisco County Transportation Authority
   location: San Francisco
-  description: Continued development of SF-CHAMP, the first and most well-regarded activity-based transportation model used in the United States at the time. Our team led the modeling for congestion pricing, bus rapid transit, land use development, and many other studies. Managed the team responsible for all agency technology, web properties, and graphics.
+  description: Continued development of SF-CHAMP, an activity-based transportation model. Supported decisionmaking for congestion pricing, bus rapid transit, land use development, and many other studies. Managed the modeling, IT, and graphics teams.
   project: SF-CHAMP
   skills:
     - Web-based data visualization
@@ -51,7 +51,7 @@
   years: 2003-2007
   company: San Francisco County Transportation Authority
   location: San Francisco
-  description: Developed the SF-CHAMP travel model in support of the agency's decision-making needs.
+  description: Developed the SF-CHAMP travel model in support of the agency's decisionmaking needs.
   project: SF-CHAMP
   skills:
     - C++
