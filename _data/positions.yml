@@ -4,14 +4,14 @@
   group: Transport Systems Planning and Transport Telematics
   location: Berlin, Germany
   mentors:
-    - Kai Nagel
-  description: Building web-based data visualization tools for the MATSim agent-based transport simulation framework.
-  project: MATSim, AfterSim, EpiSim
+    - Prof. Kai Nagel
+  description: Building web-based data visualization tools for the MATSim agent-based transport simulation framework. Teaching data science and data visualization techniques.
+  project: SimWrapper, MATSim,  EpiSim
   skills:
-    - Scalable Visualization
+    - Scalable data visualization of very large geographic datasets
     - JavaScript, Python, R, Java
-    - ThreeJS, Deck.gl
-    - UX
+    - ThreeJS, Deck.gl, , GIS
+    - Web UI/UX
 
 - title: Director of Data
   years: 2013-2017
@@ -21,15 +21,15 @@
   description: Led 22-person team responsible for all technical details of travel modeling, land use modeling, and geographic information systems (GIS) in support of the Seattle metropolitan region's future growth plans.
   project: SoundCast, UrbanSim
   skills:
-    - Managing team of 22 to time and budget
+    - Managed team of 22 to time and budget
     - Activity-based travel model development
     - Government service and public outreach
 
 - title: Founder and CEO
   years: 2011-present
   company: Because LLC
-  location: San Francisco, Seattle
-  description: Consulting for private firms and government agencies needing expertise in web-based data visualization, travel demand modeling, and software development. Clients include Sidewalk Labs, San Francisco County Transportation Authority, NACTO, WSP Inc., others.
+  location: Berlin, Seattle, San Francisco
+  description: Consulting for private firms and government agencies needing expertise in web-based data visualization, travel demand modeling, and software development. Clients include San Diego Association of Governments, Sidewalk Labs, San Francisco County Transportation Authority, NACTO, WSP Inc., others.
   project: TNCs Today, MyStreetSF
   skills:
     - Web-based data visualization
@@ -39,7 +39,7 @@
   years: 2007-2011
   company: San Francisco County Transportation Authority
   location: San Francisco
-  description: Continued development of SF-CHAMP, an activity-based transportation model. Supported decisionmaking for congestion pricing, bus rapid transit, land use development, and many other studies. Managed the modeling, IT, and graphics teams.
+  description: Improved and developed SF-CHAMP, an early example of an activity-based transport model. Supported agency decision-making for congestion pricing, bus rapid transit, land use development, and many other studies. Managed the modeling, IT, and graphics teams.
   project: SF-CHAMP
   skills:
     - Web-based data visualization
@@ -60,23 +60,22 @@
     - Government service and public outreach
 
 - title: Software Developer
-  years: 1999-2003
   company: Wind River Systems
-  location: Alameda
+  years: 1999-2003
+  location: Alameda, CA
   group: Engineering
-  description: Developed front-end desktop software for developer tooling of embedded systems.
+  description: Developed Java-based front-end desktop software used by developers of embedded systems, including robotics on Mars and automotive applications.
   project: Tornado
   skills:
     - Java
     - UX
-
-- title: Transportation Engineer
-  years: 1991-1999
-  company: Parsons Brinckerhoff (now WSP)
-  location: Washington DC, Seattle, San Francisco
-  group: Systems Analysis Group
-  description: Developed travel modeling software for many government clients across the globe.
-  project: CT-RAMP
-  skills:
-    - Java
-    - C++
+# - title: Transportation Engineer
+#   years: 1991-1999
+#   company: Parsons Brinckerhoff (now WSP, Inc.)
+#   location: Washington DC, Seattle, San Francisco
+#   group: Systems Analysis Group
+#   description: Developed travel modeling software for many government clients across the globe.
+#   project: CT-RAMP
+#   skills:
+#     - Java
+#     - C++

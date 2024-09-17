@@ -1,18 +1,18 @@
-- title: "Data Science for Agent-Based Transport Modeling"
+- title: 'Data Science for Agent-Based Transport Modeling'
   location: TU Berlin
   role: Instructor
   students: 60 students
-  year: 2020
+  year: '2023, 2020'
   description: Developed new 3-credit course for VSP department, focusing on R for data science, including exploratory data analysis, data visualization, and online publication of results.
 
-- title: "Programming with Python"
+- title: 'Programming with Python'
   role: Teacher
   year: 2016
   students: 20 participants
   location: UW eScience Institute
   description: One-day workshop for scientists as part of Software Carpentry workshop series.
 
-- title: "Version Control with Git"
+- title: 'Version Control with Git'
   year: 2016
   students: 50 participants
   location: TRB Applications Conference, Denver

@@ -6,7 +6,7 @@ title: CV
 
 <section class="container">
 
-<h1><a href="{{ absolute_url }}/">William (Billy) Charlton</a></h1>
+<h1><a href="{{ absolute_url }}/">Dr. William (Billy) Charlton</a></h1>
 
 <!-- <small class="live-link">Last updated in
   <time datetime="{{ site.time }}">{{ site.time | date: '%B %Y'}}</time>.
@@ -31,6 +31,7 @@ title: CV
 <p>
   <!-- <b>Date of birth:</b> 26 December 1969<br/> -->
   <b>Place of birth:</b> Takoma Park, Maryland, United States of America<br/>
+  <b>Permanent Resident:</b> Germany<br/>
   <b>Citizenship:</b> United States of America<br/>
   <!-- <br/><b>Signature:</b> -->
 </p>
@@ -39,9 +40,14 @@ title: CV
 <h2>Research Area</h2>
 
 <p>
-An expert in transport modeling, data management, and data visualization,
-I aim to support informed decisionmaking and advance the art of data visualization by
-developing platforms and technologies that let people see and communicate what their data is trying to tell them.
+An expert in agent- and activity-based transport modeling, data visualization, and data workflow management.
+I support informed decision-making and advance the science of data visualization by
+developing platforms that let people see what their data is trying to tell them.
+<br><br>
+Created the <a target="_blank" href="https://simwrapper.github.io/site"><span style="color: #44f">SimWrapper</span></a>
+transport model data dashboard platform,
+now used worldwide for presenting MATSim, ActivitySim, DaySim, and BEAM microsimulation outputs.
+
 </p>
 
 <h2>Positions</h2>
@@ -105,36 +111,35 @@ developing platforms and technologies that let people see and communicate what t
 
 <h2>Skills</h2>
 
-<p><b>Technical team management. </b>
+<p><b>Data visualization.</b>
+  Expert in web-based data visualization techniques including Deck.gl, Three.js, and R-Shiny.
+  Expert in the <b>R/Tidyverse</b> data analysis platform. Comfortable with Python/Pandas.
+</p>
+
+<p><b>Agent-based and activity-based modeling. </b>
+  Deep familiarity with <b>MATSim</b> and <b>ActivitySim</b> microsimulation frameworks.
+  Developed SimWrapper, a web-based dashboard tool for analyzing MATSim and ActivitySim outputs.
+  </p>
+
+  <p><b>Technical team management. </b>
   Managed a 22 person technical team and a six person team at previous positions.
   Reported to the Executive Director in both positions, providing budget and work program for each agency.
   I excel at creating motivated technical teams by providing guidance, mentorship, and skill-building.
 </p>
 
-<p><b>Agent-based and activity-based modeling. </b>
-Deep familiarity with <b>MATSim</b> and <b>ActivitySim</b>.
-Developed SimWrapper, a web-based dashboard tool for analyzing MATSim and ActivitySim outputs.
+<p><b>Front end web developer</b>
+  Modern web front-end developer, expert in <b>Vue.js</b> and <b>React.</b> I have built countless
+  single page application websites, from internal tools such as timesheet and expense report creators to full data analysis portals including 3D animations and map-based visualizations.
 </p>
 
 <p><b>Programming languages. </b>
-  Over ten years experience writing advanced <b>Java, Python, TypeScript, R, C, and C++</b>.
+  Over ten years experience writing advanced <b>JavaScript/TypeScript, Java, Python, R, C, and C++</b>.
   Built successful Android mobile applications in Java.
   Taught introductory Python and R courses.
 </p>
 
-<p><b>Data analysis. </b>
-  Expert in web-based data visualization techniques including <b>Deck.gl</b> and <b>three.js.</b>
-  Expert in the <b>R/Tidyverse</b> data analysis platform. Comfortable with Python/Pandas.
-</p>
-
-<p><b>Front end web developer</b>
-  Modern web front-end developer, expert in <b>Vue.js</b> and familiar with React. I have built countless
-  single page application websites, from internal tools such as timesheet and expense report creators to full data analysis portals including 3D animations and map-based visualizations.
-</p>
-
 <p><b>Other technical skills. </b>
-  Expert in <b>Git</b> and code management.
-  Vast experience with setting up data flow pipelines.
+  Vast experience with setting up data flow pipelines. Expert in <b>Git</b> and code management.
   Very comfortable with <b>Docker</b> and related DevOps technologies.
   I consider myself a technology generalist: I am very familiar with many technologies and can pick up others quickly.
 </p>
@@ -144,7 +149,7 @@ Developed SimWrapper, a web-based dashboard tool for analyzing MATSim and Activi
 {% assign sorted_pubs = site.publications | reverse %}
 
 <!-- {% assign types = "Conference|Journal|Book Chapter|Demo|Workshop|Thesis" | split: "|" %} -->
-{% assign types = "Conference|Journal|Book Chapter" | split: "|" %}
+{% assign types = "Dissertation|Conference|Journal|Book Chapter" | split: "|" %}
 {% for type in types %}
   {% assign counter = 1 %}
   {% for pub in sorted_pubs %}
@@ -281,7 +286,9 @@ Developed SimWrapper, a web-based dashboard tool for analyzing MATSim and Activi
 
 <p>Chair of the Board, Zephyr Transport Foundation, 2018-2020.</p>
 
-<p>Certified Volunteer Teacher, Software Carpentry Organization.</p>
+<p>Transportation Research Board, Committee Member, Transportation Demand Forecasting (ADB40), 2006-2014</p>
+
+<p>Certified Teacher, Software Carpentry Organization.</p>
 
 <p>Reviewer for Transportation Research Board ADB40/AEP50.</p>
 
