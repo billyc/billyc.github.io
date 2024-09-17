@@ -7,25 +7,44 @@
     color: $text-color;
   }
 
-  strong, h1, h2, h3, h4 {
+  strong,
+  h1,
+  h2,
+  h3,
+  h4 {
     font-weight: 500;
 
-    &, a {
+    &,
+    a {
       color: $dark-text-color;
     }
   }
 
-  h1, h2, h3, h4 {
+  h1,
+  h2,
+  h3,
+  h4,
+  p {
+    hyphens: none;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
     border: none;
     page-break-after: avoid;
   }
 
-  h1, h2, .pub-type {
+  h1,
+  h2,
+  .pub-type {
     color: $brand-color;
-    margin: 1rem 0 .2rem 0;
+    margin: 1rem 0 0.2rem 0;
   }
 
-  h1, h1>a:hover {
+  h1,
+  h1 > a:hover {
     margin-top: 2rem;
     font-weight: 600;
     text-decoration: none;
@@ -96,8 +115,9 @@
     }
   }
 
-  .muted, .muted a {
-    color: $grey-color;;
+  .muted,
+  .muted a {
+    color: $grey-color;
   }
 
   .award {
@@ -146,7 +166,8 @@
       display: block;
     }
 
-    .fill, h3 {
+    .fill,
+    h3 {
       flex: 1;
     }
   }
@@ -155,7 +176,8 @@
     margin-top: 0.7rem;
   }
 
-  .date-container .date, .date-container time {
+  .date-container .date,
+  .date-container time {
     display: block;
     width: 80px;
     text-align: right;
@@ -167,13 +189,13 @@
   .date-container .right {
     padding-left: 10px;
     color: $grey-color;
-    font-size: .75rem;
+    font-size: 0.75rem;
   }
-  
+
   /* Link back to homepage */
 
   .back {
-    min-width: 480px;  /* same as container */
+    min-width: 480px; /* same as container */
     padding: 0.6rem 1rem;
     background-color: $grey-color-dark;
     color: #fff;
@@ -212,8 +234,9 @@
       display: block;
     }
 
-    h1, h2 {
-      margin: .4rem 0 .1rem 0;
+    h1,
+    h2 {
+      margin: 0.4rem 0 0.1rem 0;
     }
 
     /* link to interactive talk/publications */
