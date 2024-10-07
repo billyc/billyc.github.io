@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Home"
+title: 'Home'
 class: home
 ---
 
@@ -13,10 +13,11 @@ I am a researcher at [Technische Universität Berlin](https://vsp.tu-berlin.de) 
 
 Before coming to Berlin, I was **Director of Data** for the [Puget Sound Regional Council](https://www.psrc.org) in Seattle, USA. Our 22-person team managed all travel forecasting and land use / growth management in support of the Seattle metropolitan region’s planning goals.
 
+In 2023 I completed my Ph.D. dissertation from [Technische Universität Berlin](https://vsp.berlin/), under direction of Professor Kai Nagel at the Institute for Land- and Sea Transport, Transport Systems Planning and Telematics.
+
 I received my Masters in Civil Engineering from the [Northwestern University Transportation Center](https://www.transportation.northwestern.edu/) and my undergraduate BSCE from [Cornell University](https://www.cee.cornell.edu/cee).
 
-I am always looking for new interesting projects! Email me or find me on Twitter at @billyinberlin
-or <a rel="me" href="https://urbanists.social/@billy">Mastodon @billy@urbanists.social</a>
+I am always looking for new interesting projects! Email me or find me on Twitter at @billyinberlin.
 
 </div>
 
