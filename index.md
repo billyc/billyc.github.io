@@ -11,7 +11,7 @@ class: home
 <div class="intro" markdown="1">
 I am a researcher at [Technische Universität Berlin](https://vsp.tu-berlin.de) focusing on **data visualization** for the [MATSim transport simulation framework](https://matsim.org). MATSim is currently getting a lot of attention for its ability to simulate automated vehicle fleets, and is also the progenitor of EpiSim with is used for studying [COVID-19 virus propagation](https://covid-sim.info).
 
-In 2023 I completed my Ph.D. dissertation from [Technische Universität Berlin](https://vsp.berlin/), under direction of Professor Kai Nagel at the Institute for Land- and Sea Transport, Transport Systems Planning and Telematics.
+In 2023 I completed my Ph.D. dissertation from [Technische Universität Berlin](https://vsp.berlin/), under direction of Professor Kai Nagel at the Institute for Land and Sea Transport, Transport Systems Planning and Telematics. I have been teaching Data Science at the department since 2020.
 
 Before coming to Berlin, I was **Director of Data** for the [Puget Sound Regional Council](https://www.psrc.org) in Seattle, USA. Our 22-person team managed all travel forecasting and land use / growth management in support of the Seattle metropolitan region’s planning goals.
 
