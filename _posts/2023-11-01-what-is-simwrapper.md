@@ -10,7 +10,7 @@ Hopefully this short intro will help you "get it" and understand what it's all a
 
 ## What is SimWrapper?
 
-SimWrapper is a website, available to anyone at https://simwrapper.github.io. It is a tool that allows you to inspect the outputs of transport microsimulation models - originally for MATSim, but now also used for ActivitySim and other agent- and activity-based models around the world.
+SimWrapper is a website, available to anyone at <https://simwrapper.github.io>. It is a tool that allows you to inspect the outputs of transport microsimulation models - originally for MATSim, but now also used for ActivitySim and other agent- and activity-based models around the world.
 
 From the main SimWrapper website, you can navigate to the output folders on your local machine using Google Chrome or MS Edge; or if your data is stored in the cloud it can be configured to access remote data, too. All of this is explained in detail in the [SimWrapper documentation](https://simwrapper.github.io/docs).
 
