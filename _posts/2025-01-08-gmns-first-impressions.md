@@ -4,6 +4,7 @@ layout: post
 thumbnail: /images/blog/conn-avenue-dc.jpg
 ---
 
+![Connecticut Avenue in Washington, DC](/images/blog/conn-avenue-dc.jpg)
 _GMNS is the "General Modeling Network Specification" which is under development [here](https://github.com/zephyr-data-specs/GMNS)_
 
 
