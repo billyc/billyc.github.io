@@ -9,7 +9,7 @@ thumbnail: /images/blog/conn-avenue-dc.jpg
 _GMNS is the "General Modeling Network Specification" which is under development [here](https://github.com/zephyr-data-specs/GMNS)_
 
 
-### GMNS: uninformed first impressions
+## GMNS: uninformed first impressions
 
 I don't know any of the history or the path that was walked to arrive at GMNS 0.9. And I haven't coded anything -- no read/parse/write of these files yet. So this is at best an uninformed opinion about GMNS. But I do know a bit about networks generally. So here we go.
 
@@ -17,18 +17,23 @@ Having a CSV file with a WKT field for geometry makes it trivial to load this in
 
 I could easily write a CSV reader that parses just the nodes, links (and optional geometry tables for nice curvy links) -- thus I could build a GMNS viewer in SimWrapper in less than a day. Seriously! Coming soon.
 
-### and some concerns...
+## and some concerns...
 
 Spec looks really decent... a lot of thought has gone into the design and I love that there is a JSON-compatible schema. But (yes it's a "but" to me) it is clearly inspired by GTFS "bag of disparate files" design. This is human-friendly but really sucks for performance, visualization, sharing, .... ugh. All the same problems of those old 90s multifile "shapefiles" that we escaped from ages ago.
 
-- crs in config file
-- WKT text strings for geometry embedded OR in separate file?
-- long/lat floats as 10 digit strings, tons of repetition and yet not compressible :-(
+### nitpicks
+
+- Can't open the link file if you don't know the coordinate "CRS"; and the crs is in a separate config file
+- WKT text strings for geometry either embedded OR in separate file?
+- long/lat floats as 10 digit strings, tons of repetition (since node coords will be repeated with every traversal) and yet not compressible :-(
 - separate files means multiple remote file requests and ease of accidentally leaving things out by end user
+- Chrome "Local Files Mode" won't be able to open files when given a handle to one specific file. This is probably only a SimWrapper problem, but SimWrapper is the viewer for ActivitySim...
+
+### performance
 
 The MATSim experience with large CSV files is that CSV is **absolutely untenable** for large networks. We have million-link MATSim simulations that literally crash the browser tab when we just try to load them from CSV text format.
 
-But GMNS doesn't have to be text: it explicitly calls out "optional database" with an SQLite example! With all the same SQLite problems that we identified in our exploration of sqlite:
+But GMNS doesn't have to be text: it explicitly calls out "optional database" with an SQLite example! With all the SQLite problems that we identified in our exploration of sqlite:
 
 - enormous file size
 - impossible to compress (ok those are the same thing)
@@ -37,11 +42,13 @@ But GMNS doesn't have to be text: it explicitly calls out "optional database" wi
 - even bigger files once all the needed indexes are added
 - SQLite performs pretty poorly in the browser (better now with WebAssembly but it's still quite complex)
 
-For these reasons sqlite is a terrible fit for our large MATSim networks -- ten times larger than a gzipped XML Matsim network. Non starter. 😢
+For these reasons sqlite is a terrible fit for large MATSim networks -- **ten times larger** than a gzipped XML Matsim network. Non starter. 😢
+
+### a bad sign...
 
 In discussion at the committee meeting, people talked about **converting GMNS to something that can be imported** for Aequilibra or Polaris (not sure which). I fear this is an admission of failure: the network format is not usable as-is. I'm curious why they didn't write a native reader for Polaris instead of converting? Maybe I misunderstood this part of the discussion.
 
-### What made OMX so successful?
+### taking a step back: what made OMX so successful?
 
 [OMX](https://github.com/osPlanning/omx), the open matrix data format for transport modeling, leverages the battle-tested HDF5 library for the underlying file format. Choosing a well-known, globally-used and supported container saved us from having to solve a lot of problems related to compression, data layout, processor cache optimization, multi-language API support, etc. I don't think there is any way we could have written a raw format better than HDF5.
 
@@ -65,7 +72,7 @@ For MATSim networks we kinda turned Avro "sideways": normally you would place on
 
 One big problem to solve is how to represent the proliferation of tables in GMNS: I am not sure how to handle multiple tables in an Avro file -- might be trivial? might be impossible/bad idea? Needs investigation.
 
-### changesets
+### network wrangler and... changesets
 
 For Network Wrangler, networks are built as changesets that mutate the network in stepwise operations. Could each changeset be embedded in the file as a record? i.e., a *change record?* Like git commits or layers in Photoshop. If this were possible, it might open up some really interesting visualization capabilities and probably be good for debugging too.
 
