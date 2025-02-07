@@ -2,7 +2,7 @@
 title: Billy Charlton
 email: charlton@vsp.tu-berlin.de
 description: > # this means to ignore newlines until "baseurl:"
-  Data Scientist at TU-Berlin. I create interactive data visualization and analysis tools for modeling large systems.
+  Dr.-Ing. William (Billy) Charlton. Data Scientist at TU-Berlin. I create interactive data visualizations and analysis tools for modeling large systems.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://billyc.github.io" # the base hostname & protocol for your site
 production_url: "https://billyc.github.io"
